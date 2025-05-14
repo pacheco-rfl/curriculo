@@ -23,9 +23,27 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0 20px;
+    padding: 0px 0 0 20px;
     transition: 2s;
 }
+
+a:link{
+    text-decoration: none; /troca a cor do link/
+    color: #ac46ff;
+}
+
+a:visited{
+    color: #ff02c0; /depois de visitar a cor muda/
+}
+
+a:hover{
+    color:#d857f1;/quando o mouse passar por cima do link/
+}
+
+a:active{
+    color: #EABCFF;/quando clicar a cor muda/
+}
+
 nav:hover{
     transform: scale(1.05);
 }
@@ -48,7 +66,7 @@ nav:hover{
     width: 390px;
     height: 550px;
     display: flex;
-    margin: 0 0 0 68px;
+    margin: 100px 0 0 68px;
 }
 
 img{
@@ -83,12 +101,19 @@ p{
 /*parte 2 curriculo*/
 
 #parte2Curriculo{
-    background-color: rgb(13, 14, 13);
+    /*background-color: rgb(13, 14, 13);*/
     width: 810px;
     height: 500px;
     float: right;
     margin: 0 67px 0 0;
     box-sizing: border-box;
+}
+
+ul{
+    color: rgb(209, 209, 209);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 #persoParte2{
@@ -99,41 +124,118 @@ p{
 }
 
 #parte2{
-    background-color: brown;
+    /*background-color: brown;*/
     width: 390px;
     height: 999px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: flex-start;
     margin: 0 0 0 68px;
 }
 
 
 #meuNome p{
     color: rgb(209, 209, 209);
+    height:300px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 50px;
+    margin-top: -300px;
 }
 
 h1{
     color: white;
+    height: 333px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 100px;
+    padding: 0px 0 0px 0px;
 }
 
-#persoExp{
+ #persoExp{
     margin-top: 200px;
 }
 
-#persoEstudante{
-    margin-top: 600px;
+#meuNome{
+    height: 333px;
 }
-#meuNome h1{
-    color: white;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 100px;
-    margin-top: 300px;
+
+#persoEstudante{
+    height: 333px;
+    padding: 50px 0 0 51px;
+}
+
+#blocoContatos{
+    height: 333px;
+}
+
+#persoContatos{
+    padding: 100px 0 0 0;
+    color: #EABCFF;
+}
+
+.roxo{
+    color: rgb(171, 69, 255);
+}
+
+#rosa{
+    color: #ff02c0;
+}
+
+#persoEmail{
+    width: 390px;
+    height: 333px;
+    margin-top: -350px;
+    margin-left: -30px;
+    font-size: 25px;
+}
+
+#persoEmail2{
+    width: 390px;
+    height: 333px;
+    margin-top: -330px;
+    margin-left: -30px;
+    font-size: 25px;
+}
+
+#persoNumero{
+    width: 390px;
+    height: 333px;
+    margin-top: -370px;
+    margin-left: -30px;
+    font-size: 25px;
+}
+
+#persoNumero2{
+    width: 390px;
+    height: 333px;
+    margin-top: -352px;
+    margin-left: -30px;
+    font-size: 25px;
+}
+
+#telefoneSpan{
+    color: #ff02c0;
+    
+}
+
+#enderecoSpan{
+    color: #EABCFF;
+}
+
+#persoEndereco{
+    width: 390px;
+    height: 333px;
+    margin-top: -340px;
+    margin-left: -30px;
+    font-size: 25px;
+}
+
+#persoEndereco2{
+    width: 390px;
+    height: 333px;
+    margin-top: -352px;
+    margin-left: -30px;
+    font-size: 25px;
 }
