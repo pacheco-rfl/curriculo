@@ -1,11 +1,21 @@
 @charset "UTF-8";
-body{
-    background-image: url(/IMG/antigo-fundo-de-aquarela-preto.jpg);
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Share+Tech&display=swap');
+
+body{
+    background-image: url(/IMG/a091c631b0e4c553c61e8d806558cd09.jpg);
+    
     margin: 0;
     padding: 0;
-    
+    font-family: "Share Tech", sans-serif;
 }
+
+button:hover, form .botaoform input:hover{
+    box-shadow: 0px 0px 20px #ac46ff;
+    transform: scale(1.05);
+}
+
+
 
 header{
     /*background-color: aliceblue;*/
@@ -32,20 +42,20 @@ nav{
 }
 
 a:link{
-    text-decoration: none; /troca a cor do link/
-    color: #ac46ff;
+    text-decoration: none; /*troca a cor do link*/
+    color:  #ac46ff;
 }
 
 a:visited{
-    color: #ff02c0; /depois de visitar a cor muda/
+    color: #ff02c0; /*depois de visitar a cor muda*/
 }
 
 a:hover{
-    color:#d857f1;/quando o mouse passar por cima do link/
+    color:#d857f1; /*quando o mouse passar por cima do link*/
 }
 
 a:active{
-    color: #EABCFF;/quando clicar a cor muda/
+    color: #EABCFF; /*quando clicar a cor muda*/
 }
 
 nav:hover{
@@ -69,8 +79,11 @@ nav:hover{
     /*background-color: brown;*/
     width: 390px;
     height: 550px;
-    display: flex;
     margin: 100px 0 0 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 img{
@@ -78,6 +91,8 @@ img{
     height: 100%;
     position: relative;
     animation: flutuar 2s infinite alternate;
+    border-radius: 30px;
+    box-shadow: 0 0 8px #d857f1;
 }
     
 @keyframes flutuar{
@@ -105,6 +120,7 @@ p{
 
 #persoCursos{
     padding: 100px 0 0 50px;
+    margin-top: 140px;
 }
 
 
@@ -126,7 +142,7 @@ ul{
     color: rgb(209, 209, 209);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    margin-left: 30px;
 }
 
 #persoParte2{
@@ -183,6 +199,14 @@ h1{
     height: 333px;
 }
 
+a.linksctt{
+    color: #EABCFF;
+}
+
+a.linksctt:hover{
+    color: #FFF;
+}
+
 #persoContatos{
     padding: 100px 0 0 0;
     color: #EABCFF;
@@ -202,6 +226,12 @@ h1{
     margin-top: -350px;
     margin-left: -30px;
     font-size: 25px;
+}
+
+#persoemail:hover{
+    
+    text-decoration: none; /*troca a cor do link*/
+    color: #fff;
 }
 
 #persoEmail2{
@@ -253,19 +283,104 @@ h1{
     font-size: 25px;
 }
 
-button{  /*botão Fale Comigo! embaixo das informações principais*/   
-    font-size: 40px;
-    font-weight: 600px;
-    background-color: #ff04ff;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
-    margin-top: 150px;
-    margin-left: 100px;
-    box-shadow: 3px 3px 20px #d857f1;
-    font
+#TxtExp{
+    /*background-color: aqua;*/
+    width: 740px;
+    height: 300px;
+    display: flex;
+    margin: 0 67px 0 0;
+    box-sizing: border-box;
+    margin-top: -380px;
+    margin-left: 450px;
+    
 }
 
 /*Formulário Contato*/
+
+.botaoContato button{  /*botão Fale Comigo embaixo das informações principais*/   
+   
+}
+
+button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d857f1;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 150px;
+    margin-left: 90px;
+    box-shadow: 0px 0px 15px #ff72c9;
+    transition: 2s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+
+#botaoform1{
+    margin-top: 70px;
+    margin-left: 570px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+form{
+    margin-left: 95px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color:rgba(8, 8, 8, 0.301);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #EABCFF;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #97327e;
+}
+
+form textarea{
+    resize: none;
+}
+
+form textarea::placeholder{
+    color: #97327e;
+}
+
+form .botaoform{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: 155px;
+    margin: auto;
+    transition: 2s;
+}
+
+form #botaoform input{
+    height: 40px;
+    background-color: #d857f1;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .botaoform:hover{
+    transform: scale(1.05);
+}
 

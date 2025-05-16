@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <title>Currículo 2025 Rafael Pacheco</title>
     <link rel="stylesheet" href="/CSS/estilo.css">
+    <script>
+            function toggleFormulario() {
+          const formulario = document.getElementById('formulario');
+            if (formulario.style.display === 'none') {
+          formulario.style.display = 'block';
+            } else {
+          formulario.style.display = 'none';
+    }
+  }
+            
+        </script>
 </head>
 <body>
     <header>
         <nav>
-            <a class="persoA" href="#">Sobre mim</a> &nbsp; 
-            <a class="persoA" href="#">Cursos Complementares</a>&nbsp; 
-            <a class="persoA" href="#">Experiências</a> &nbsp; 
-            <a class="persoA" href="#">Contato</a> &nbsp; 
+            <a href="#parte1Curriculo">Sobre mim</a> &nbsp; 
+            <a href="#persoCursos">Cursos Complementares</a>&nbsp; 
+            <a href="#persoExp">Experiências</a> &nbsp; 
+            <a id="#persoCTT" href="#persoContatos">Contato</a> &nbsp; 
         </nav>
     </header>
     <main>
         <section id="parte1Curriculo">
             <h2>Sobre mim</h2>
-            <p>Sou o <span class="roxo">Rafael Pacheco</span>, tenho 17 anos e estou no 3º ano do Ensino Médio. Tenho conhecimento avançado em excel, me comunico em inglês o suficiente para caso precise, e estou em busca de uma posição como Jovem Aprendiz na área de Dev ou Administrativa.</p>
+            <p>Sou o <span class="roxo">Rafael Pacheco</span>, tenho 17 anos e estou no 3º ano do Ensino Médio. Tenho conhecimento avançado em excel,e inglês intermediário, estou em busca de uma posição como Jovem Aprendiz na área de Dev ou Administrativa.</p>
 
             <h2 id="persoCursos">Cursos Complementares
 
@@ -28,7 +39,7 @@
         <section>
             <div id="foto">
 
-                <img src="/IMG/fundocurric.png" alt="minhaFoto">
+                <img src="/IMG/roboloxrox-removebg-preview.png" alt="minhaFoto">
          </div>
         </section>
 
@@ -68,29 +79,68 @@
 
 
                 <h2 id="persoEmail">E-mail<span id="rosa">:</span></h2>
-                <p id="persoEmail2">rafaelpacheco1324@yahoo.com</p>
+                <p id="persoEmail2"><strong><a class="linksctt" href="#">rafaelpacheco1324@yahoo.com</a></strong></p>
 
 
                 <h2 id="persoNumero"><span id="telefoneSpan">Telefone</span>:</h2>
-                <p id="persoNumero2"><br>(11) 94048-4076</p>
+                <p id="persoNumero2"><br><strong><a class="linksctt" href="#">(11) 94048-4076</a></strong></p>
 
-                <h2 id="persoEndereco"><span id="enderecoSpan">Endereço</span>:</h2>
-                <p id="persoEndereco2"><br>Rua Canhemborá 495 <br>Cep: 02253-010 <br>Bairro: Vila Gustavo</p>
+                <h2 id="persoEndereco"><span id="enderecoSpan"><strong>Endereço</strong></span>:</h2>
+                <p id="persoEndereco2"><br><strong><a class="linksctt" href="#">02253-010 <br>Bairro: Vila Gustavo</strong></p></a>
             </div>
 
-            <div id="botaoContato"></div>
-            <a href="#">
-                <button>
-                    <p>Fale Cmg</p>
-                </button>
-            </a>
+            <div id="TxtExp">
+                <ul>
+                    <li>
+                        <span class="roxo">  Assistente Administrativo </span> - Configuro computadores, faço a entrada no sistema da empresa, auxilio no atendimento ao cliente.
+                    </li>
+                    <hr>
+
+                    <li>
+                        <span class="roxo"> Madu & Trufas</span>
+                        Produção artesanal e venda de trufas de diversos sabores.
+                    </li>
+                    <br>
+                    <li>
+                        <span class="roxo"> Atendimento ao público</span>
+                         e gestão de pedidos.
+                    </li>
+                    <br>
+                    <li>
+                        <span class="roxo"> Controle de estoque</span>
+                         e compra de ingredientes.
+                    </li>
+                    <br>
+                    <li>
+                        <span class="roxo"> Divulgação e vendas</span>
+                         através das redes sociais e presencialmente.
+                    </li>
+                    <br>
+                    <li>
+                        <span class="roxo"> Financeiro básica</span>, incluindo precificação e controle de lucros.
+                    </li>
+                </ul>
+            </div>
+
       </section>
 
     <section> <!--formulário-->
         
-    </section>      <!--fim do form-->  
+    
+        <button id="botaoform1" onclick="toggleFormulario()">Fale Comigo!</button>
 
-
+        <div id="inputs">
+        <form action="">
+            <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required><br>
+            <input type="text" name="email" id="email" placeholder="Seu e-mail:" required><br>
+            <input type="number" name="celular" id="celular" placeholder="Seu celular" required><br>
+                <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea><br>
+        <div class="botaoform">
+              <input type="submit" value="Enviar">
+        </div>
+    </div>
+        </form>
+</section>      <!--fim do form-->  
     </main>
 </body>
 </html>
